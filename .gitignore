@@ -104,3 +104,8 @@ typings/
 
 .npmrc
 build/
+
+#keys
+mycert.crt
+mycert.key
+mycert.csr
