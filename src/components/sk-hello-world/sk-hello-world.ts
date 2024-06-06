@@ -21,7 +21,7 @@ export class PageHighlight extends LitElement {
 		return html`
 			${addBootstrap()}
 			<div>
-				<h1>Hello world</h1>
+				<h1>Helloo woorld</h1>
 				<span style="color: ${this.color}">${this.message}</span>
 			</div>
 		`;
