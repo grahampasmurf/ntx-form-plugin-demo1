@@ -1,0 +1,24 @@
+import { type PluginContract } from '@nintex/form-plugin-contract';
+import { LitElement, html } from 'lit';
+import { customElement, property } from 'lit/decorators.js';
+import { config } from './{{{elementName}}}.config';
+import { styles } from './{{{elementName}}}.styles';
+
+@customElement('plugin-elementname')
+export class {{{className}}} extends LitElement {
+	static getMetaConfig = (): Promise<PluginContract> | PluginContract => config;
+
+	static override styles = styles;
+
+	@property({ type: String })
+	declare sampleProperty: string;
+
+	constructor() {
+		super();
+		this.sampleProperty = '';
+	}
+
+	override render() {
+		return html`<div><h1>${this.sampleProperty}</h1></div>`;
+	}
+}

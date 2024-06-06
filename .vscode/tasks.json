@@ -1,0 +1,56 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build:dev",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [],
+			"label": "Build",
+			"detail": "Development build",
+			"path": "./",
+			"isBackground": true
+		},
+		{
+			"type": "npm",
+			"script": "publish",
+			"group": {
+				"kind": "build"
+			},
+			"problemMatcher": [],
+			"label": "Publish",
+			"detail": "Build and publish to Azure Blob Storage",
+			"path": "./"
+		},
+		{
+			"type": "npm",
+			"script": "start",
+			"label": "Start",
+			"problemMatcher": [],
+			"hide": true,
+			"path": "./",
+			"isBackground": true
+		},
+		{
+			"label": "Debug",
+			"detail": "Start the local server with a development build",
+			"dependsOn": [
+				"Build",
+				"Start"
+			],
+			"dependsOrder": "parallel",
+			"problemMatcher": []
+		},
+		{
+			"type": "npm",
+			"script": "generate",
+			"label": "Add plugin",
+			"detail": "Create a new plugin",
+			"path": "./",
+			"problemMatcher": [],
+		}
+	]
+}

@@ -1,0 +1,6 @@
+{
+	"group": "Starter Kit",
+	"plugins": {
+		"sk-hello-world": "Hello World"
+	}
+}
