@@ -109,3 +109,4 @@ build/
 mycert.crt
 mycert.key
 mycert.csr
+.vscode/settings
