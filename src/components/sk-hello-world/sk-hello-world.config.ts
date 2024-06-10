@@ -13,7 +13,7 @@ export const config: PluginContract = {
 		},
 		message: {
 			type: 'string',
-			title: 'Your message to the world',
+			title: 'Your message to the w0rld',
 		},
 	},
 	standardProperties: {
