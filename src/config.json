@@ -1,6 +1,6 @@
 {
-	"group": "Starter Kit",
+	"group": "Visual Data",
 	"plugins": {
-		"sk-hello-world": "Hello World"
+		"sk-hello-world": "Hello W0rld"
 	}
 }
