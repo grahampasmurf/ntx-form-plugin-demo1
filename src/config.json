@@ -1,6 +1,6 @@
 {
 	"group": "Visual Data",
 	"plugins": {
-		"sk-hello-world": "Hello W0rld"
+		"sk-hello-world": "Lit Plugin example"
 	}
 }

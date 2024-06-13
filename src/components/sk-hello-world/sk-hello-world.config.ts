@@ -13,7 +13,19 @@ export const config: PluginContract = {
 		},
 		message: {
 			type: 'string',
-			title: 'Your message to the w0rld',
+			title: 'Your message to the world',
+		},
+		theme: {
+			type: 'string',
+			title: 'custom theme. Ex. material_orange',
+		},
+		minDate: {
+			type: 'string',
+			title: 'Min Date. Ex. 2020-01',
+		},
+		maxDate: {
+			type: 'string',
+			title: 'Max Date. Ex. 2024-12-31',
 		},
 	},
 	standardProperties: {

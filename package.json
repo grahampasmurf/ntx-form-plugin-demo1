@@ -15,9 +15,12 @@
 	"author": "Nintex",
 	"license": "Apache-2.0",
 	"dependencies": {
+		"@easepick/bundle": "^1.2.1",
 		"@nintex/form-plugin-contract": "^1.0.0-beta.2",
 		"@open-wc/scoped-elements": "^1.3.3",
-		"lit": "^2.8.0"
+		"lit": "^2.8.0",
+		"lit-flatpickr": "^0.4.0",
+		"litepicker": "^2.0.12"
 	},
 	"devDependencies": {
 		"@azure/storage-blob": "^12.16.0",
