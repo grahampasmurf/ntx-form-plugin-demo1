@@ -14,9 +14,9 @@ export class PageHighlight extends LitElement {
 
 	static override styles = styles;
 
-	getValue() {
-		this.shadowRoot.querySelector('#my-date-picker').getValue();
-	}
+	// getValue() {
+	// 	this.shadowRoot.querySelector('#my-date-picker').getValue();
+	// }
 
 	@property({ type: String })
 	declare color: string;
@@ -33,20 +33,24 @@ export class PageHighlight extends LitElement {
 	@property({ type: String })
 	declare maxDate: string;
 
+	@property({ type: String })
+	declare defaultDate: string;
+
 	override render() {
 		return html`
 			${addBootstrap()}
 			<div>
-				<h1>Your custom calendar date picker</h1>
 				<span style="color: ${this.color}">${this.message}</span>
 				<lit-flatpickr
 					id="my-date-picker"
 					altInput
-					altFormat="F j, Y"
+					allowInput
+					altFormat="m/d/Y"
 					dateFormat="Y-m-d"
 					theme="${this.theme}"
 					minDate="${this.minDate}"
 					maxDate="${this.maxDate}"
+					defaultDate=${this.defaultDate}
 				></lit-flatpickr>
 			</div>
 		`;

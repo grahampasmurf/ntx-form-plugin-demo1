@@ -4,7 +4,7 @@ export const config: PluginContract = {
 	controlName: '__pluginControlName__',
 	groupName: '__pluginGroupName__',
 	fallbackDisableSubmit: false,
-	description: 'Hello World',
+	description: 'Date Picker',
 	version: '1.0',
 	properties: {
 		color: {
@@ -17,7 +17,7 @@ export const config: PluginContract = {
 		},
 		theme: {
 			type: 'string',
-			title: 'custom theme. Ex. material_orange',
+			title: 'custom theme. Ex. material_orange or airbnb',
 		},
 		minDate: {
 			type: 'string',
@@ -26,6 +26,10 @@ export const config: PluginContract = {
 		maxDate: {
 			type: 'string',
 			title: 'Max Date. Ex. 2024-12-31',
+		},
+		defaultDate: {
+			type: 'string',
+			title: 'Default Date. Ex. ["2024-12-31"]',
 		},
 	},
 	standardProperties: {
