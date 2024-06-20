@@ -15,22 +15,6 @@ export const config: PluginContract = {
 			type: 'string',
 			title: 'Your message to the world',
 		},
-		theme: {
-			type: 'string',
-			title: 'custom theme. Ex. material_orange or airbnb',
-		},
-		minDate: {
-			type: 'string',
-			title: 'Min Date. Ex. 2020-01',
-		},
-		maxDate: {
-			type: 'string',
-			title: 'Max Date. Ex. 2024-12-31',
-		},
-		defaultDate: {
-			type: 'string',
-			title: 'Default Date. Ex. ["2024-12-31"]',
-		},
 	},
 	standardProperties: {
 		fieldLabel: false,
