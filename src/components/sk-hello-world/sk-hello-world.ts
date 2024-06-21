@@ -65,6 +65,7 @@ export class PageHighlight extends LitElement {
 					minDate="2020-01"
 					maxDate="2024-06-30"
 					defaultDate=${today1brackets}
+					@change="${() => this.onChange()}"
 				></lit-flatpickr>
 			</div>
 		`;
