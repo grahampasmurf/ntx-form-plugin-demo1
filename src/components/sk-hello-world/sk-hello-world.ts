@@ -74,7 +74,7 @@ export class PageHighlight extends LitElement {
 	private onChange() {
 		const el = this.shadowRoot?.getElementById('my-date-picker');
 		if (el) {
-			fire<any>(this, { detail: el.innerHTML });
+			fire<any>(this, { detail: el.innerText });
 		}
 	}
 }
