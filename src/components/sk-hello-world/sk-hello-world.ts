@@ -63,7 +63,7 @@ export class PageHighlight extends LitElement {
 					dateFormat="Y-m-d"
 					theme="airbnb"
 					minDate="2020-01"
-					maxDate="2024-06-30"
+					maxDate=${today1string}
 					defaultDate=${today1brackets}
 					@change="${() => this.onChange()}"
 				></lit-flatpickr>
